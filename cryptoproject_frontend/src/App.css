@@ -1,0 +1,35 @@
+.header {
+padding-left: 20px;
+margin-top: 20px;;
+font-family: 'Alumni Sans Pinstripe', sans-serif;
+font-size: 80px;
+font-weight: bolder;
+color: white;
+}
+
+.footer {
+    text-align: center;
+    text-decoration: none;
+    gap: 30px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    margin-left: 45%;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav {
+    margin-left: 75%;
+    display: flex;
+    gap: 25px;
+    margin-top: -150px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main {
+    color: white;
+    text-align: center;
+}
