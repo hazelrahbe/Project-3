@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 const Nav = (props) => {
     return (
         <div className="nav">
-            <Link to='/'>
+            <Link style={{textDecoration: 'none'}} to='/'>
                 <p>Home</p>
             </Link>
-            <Link to="/markets">
+            <Link style={{textDecoration: 'none'}} to="/markets">
                 <p>Markets</p>
             </Link>
-            <Link to="/trade">
+            <Link style={{textDecoration: 'none'}} to="/trade">
                 <p>Trade</p>
             </Link>
         </div>
