@@ -25,7 +25,7 @@ function App() {
         <Header />
         <Nav />
       <Routes>
-        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/" element={<Homepage URL={URL} />} />
         <Route path="/markets" element={<Markets URL={URL} />} />
         <Route path="/trade" element={<Trade URL={URL} />} />
         <Route path="/privacy" element={<PrivacyPolicy URL={URL} />} />
