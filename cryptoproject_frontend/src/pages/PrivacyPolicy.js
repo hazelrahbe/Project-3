@@ -1,5 +1,5 @@
 function PrivacyPolicy (props) {
-    return ( <div className="privacyPolicy">
+    return ( <div className="privacy">
     <h2>Privacy Policy Preview</h2>
     <h1>PRIVACY NOTICE</h1>
 
