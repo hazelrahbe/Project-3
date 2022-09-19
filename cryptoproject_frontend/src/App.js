@@ -1,14 +1,22 @@
 // Components/Style/Routes import
 import Header from './components/Header';
 import Nav from './components/Nav';
-import Main from './components/Main';
 import Footer from './components/Footer';
+import { Route, Routes } from "react-router-dom";
+
+// styles import
 import './App.css';
-import { Routes, Route, Router } from 'react-router-dom'
-import MarketPage from './components/marketpage';
-import Markets from './pages/Markets';
+
+//import pages
+import Homepage from "./pages/Homepage";
+import Markets from "./pages/Markets";
+import Trade from "./pages/Trade";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Aboutus from "./pages/Aboutus";
+
 
 function App() {
+  // const URL = "http://localhost:3000/";
   return (
     <div className="App">
       <header className="App-header">
@@ -16,10 +24,13 @@ function App() {
       <Nav />
       </header>
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path='/markets' element={<Markets />}/>
-        </Routes>
-      <Footer />
+        <Route exact path="/" element={<Homepage URL={URL} />} />
+        <Route path="/markets" element={<Markets URL={URL} />} />
+        <Route path="/trade" element={<Trade URL={URL} />} />
+        <Route path="/privacy" element={<PrivacyPolicy URL={URL} />} />
+        <Route path="/aboutus" element={<Aboutus URL={URL} />} />
+      </Routes>
+      <Footer /> 
     </div>
   );
 }
