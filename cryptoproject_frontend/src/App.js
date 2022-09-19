@@ -1,13 +1,11 @@
-// Components import
+// Components/Style/Routes import
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import { Route, Routes } from "react-router-dom";
 
-
 // styles import
 import './App.css';
-
 
 //import pages
 import Homepage from "./pages/Homepage";
@@ -22,8 +20,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Header />
-        <Nav />
+      <Header />
+      <Nav />
+      </header>
       <Routes>
         <Route exact path="/" element={<Homepage URL={URL} />} />
         <Route path="/markets" element={<Markets URL={URL} />} />
@@ -32,8 +31,6 @@ function App() {
         <Route path="/aboutus" element={<Aboutus URL={URL} />} />
       </Routes>
       <Footer /> 
-      </header> 
-
     </div>
   );
 }
