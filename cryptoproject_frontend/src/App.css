@@ -1,10 +1,18 @@
+.App {
+    min-height: 100vh;
+}
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .header {
 padding-left: 20px;
 margin-top: 20px;;
 font-family: 'Alumni Sans Pinstripe', sans-serif;
 font-size: 80px;
 font-weight: bolder;
-color: white;
+flex: 1;
 }
 
 .footer {
@@ -20,22 +28,21 @@ color: white;
 }
 
 .nav {
-    margin-left: 75%;
+    /* margin-left: 75%; */
     display: flex;
     gap: 25px;
-    margin-top: -150px;
+    /* margin-top: -150px; */
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .main {
-    color: white;
+
     text-align: center;
 }
 
 .container {
-    color: white;
+
     margin-left: 20px;
 }
-

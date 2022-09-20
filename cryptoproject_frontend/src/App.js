@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 
 // styles import
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //import pages
 import Homepage from "./pages/Homepage";
@@ -13,6 +14,8 @@ import Markets from "./pages/Markets";
 import Trade from "./pages/Trade";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Aboutus from "./pages/Aboutus";
+import LoginLink from './components/LoginLink';
+import Login from './pages/LogIn';
 
 
 function App() {
@@ -22,13 +25,17 @@ function App() {
       <header className="App-header">
       <Header />
       <Nav />
+      <LoginLink />
       </header>
       <Routes>
-        <Route exact path="/" element={<Homepage URL={URL} />} />
-        <Route path="/markets" element={<Markets URL={URL} />} />
-        <Route path="/trade" element={<Trade URL={URL} />} />
-        <Route path="/privacy" element={<PrivacyPolicy URL={URL} />} />
-        <Route path="/aboutus" element={<Aboutus URL={URL} />} />
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="/markets" element={<Markets  />} />
+        <Route path="/trade" element={<Trade />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/login" element={<Login />} />
+      
+
       </Routes>
       <Footer /> 
     </div>
