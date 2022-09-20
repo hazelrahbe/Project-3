@@ -1,9 +1,10 @@
-function Homepage(props) {
-    return (<div className="main">
-    <h1>Main Component</h1>
-    <p>Images Slider</p>
-    <article>Articles</article>
-</div>)
-  }
-  
-  export default Homepage;
+import Main from "../components/Main";
+
+const Homepage = () => {
+  return (
+    
+    <Main />
+  )
+}
+
+export default Homepage
