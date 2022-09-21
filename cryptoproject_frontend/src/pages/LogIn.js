@@ -16,7 +16,7 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div class="login">
+      <div className="login">
       <label className="labels">Username</label>
       <div className="placeholders">
       <input id="username"  type="text" onChange={handleChange} value={formState.username}/>
