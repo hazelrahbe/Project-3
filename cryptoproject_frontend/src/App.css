@@ -1,4 +1,5 @@
-.App {
+
+    .App {
     min-height: 100vh;
     background: #161616;
 }
@@ -47,10 +48,7 @@ flex: 1;
     text-align: center;
     color: azure;
 }
-.carousel {
-    position: center;
-    min-height: fit-content;
-}
+
 
 .registerinput {
     text-align: center;
@@ -74,4 +72,16 @@ input {
 #email {
     position: relative;
     right: 148px;
+}
+@media (max-width: 800px) {
+    .header {
+    font-size: 40px;
+    }
+    .footer {
+        font-size: 15px;
+    }
+    .nav {
+        font-size: 20px;
+    }
+
 }
