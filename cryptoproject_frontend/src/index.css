@@ -23,7 +23,7 @@ h4 {
 h1 {
   color: azure;
 }
-p{
+.whiteP {
   color: azure;
 }
 img {
@@ -33,7 +33,6 @@ img {
 .nav {
   padding: 50px; 
 }
-
-.login {
-  text-align: center;
-}
+/* .marketP {
+  color: black;
+} */

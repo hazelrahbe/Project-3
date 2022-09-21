@@ -5,10 +5,10 @@ const Footer = (props) => {
     return (
         <div className="footer">
             <Link style={{textDecoration: 'none'}} to="/aboutus">
-                <p>About Us</p>
+            <div class="whiteP"><p>About Us</p></div>
             </Link>
             <Link style={{textDecoration: 'none'}} to="/privacy">
-                <p>Privacy Policy</p>
+            <div class="whiteP"><p>Privacy Policy</p></div>
             </Link>
         </div>
     )
