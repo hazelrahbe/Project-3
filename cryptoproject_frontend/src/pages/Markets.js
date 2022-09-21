@@ -19,11 +19,13 @@ console.log(allmarket)
             {allmarket.map((market, index, data) => {
                 return (
                 <div key = {index} className="card">
+
                     <Link to= {'/markets'}></Link>
                     <p>ID: {market.id}</p>
                     <p>Name: {market.name}</p>
                     <p>Logo: {market.symbol}</p>
                     <p>{market.usd}</p>
+
                     <button>Trade</button>
                     </div>
                 )

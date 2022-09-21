@@ -1,5 +1,6 @@
 function PrivacyPolicy (props) {
     return ( <div className="privacy">
+    <div class="whiteP">
     <h2>Privacy Policy Preview</h2>
     <h1>PRIVACY NOTICE</h1>
 
@@ -16,7 +17,6 @@ function PrivacyPolicy (props) {
 
 
     <h3>SUMMARY OF KEY POINTS</h3>
-
     <p>This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for. You can also click here to go directly to our table of contents.
 
     What personal information do we process? When you visit, use, or navigate our Services, we may process personal information depending on how you interact with Crypto G's and the Services, the choices you make, and the products and features you use. Click here to learn more.
@@ -38,7 +38,7 @@ function PrivacyPolicy (props) {
 
 
     <h3>TABLE OF CONTENTS</h3>
-
+    
     <p>1. WHAT INFORMATION DO WE COLLECT?
     2. HOW DO WE PROCESS YOUR INFORMATION?
     3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?
@@ -52,7 +52,6 @@ function PrivacyPolicy (props) {
     11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
     12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
     </p>
-
     <h3>1. WHAT INFORMATION DO WE COLLECT?</h3>
 
     <p>Personal information you disclose to us
@@ -336,7 +335,9 @@ function PrivacyPolicy (props) {
 
     <p>You have the right to request access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal information, please submit a request form by clicking here.
     This privacy policy was created using Termly's Privacy Policy Generator.</p>
-            </div>);
+            </div></div>
+            );
+    
   }
   
   export default PrivacyPolicy;

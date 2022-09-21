@@ -16,13 +16,23 @@ const Register = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="username">Username:</label>
+      <div class="login">
+      <label className="labels">Username</label>
+      <div className="registerinput">
       <input id="username" type="text" onChange={handleChange} value={formState.username}/>
-      <label htmlFor="email">email:</label>
-      <input id="email" type="text" onChange={handleChange} value={formState.email}/>
-      <label htmlFor="password">Password:</label>
+      </div>
+      <label className="labels" id="email">Email</label>
+      <div className="registerinput">
+      <input id="emails" type="text" onChange={handleChange} value={formState.email}/>
+      </div>
+      <label className="labels">Password</label>
+      <div className="registerinput">
       <input id="password" type="password" onChange={handleChange} value={formState.password}/>
+      </div>
+      <div className="registerinput">
       <button type="submit">Register</button>
+      </div>
+      </div>
     </form>
   );
 }

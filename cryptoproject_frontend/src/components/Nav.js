@@ -4,13 +4,13 @@ const Nav = (props) => {
     return (
         <div className="nav">
             <Link style={{textDecoration: 'none'}} to='/'>
-                <p>Home</p>
+            <div class="whiteP"><p>Home</p></div>
             </Link>
             <Link style={{textDecoration: 'none'}} to="/markets">
-                <p>Markets</p>
+            <div class="whiteP"><p>Markets</p></div>
             </Link>
             <Link style={{textDecoration: 'none'}} to="/trade">
-                <p>Trade</p>
+            <div class="whiteP"><p>Trade</p></div>
             </Link>
         </div>
     )
