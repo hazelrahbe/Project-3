@@ -20,9 +20,11 @@ console.log(allmarket)
                 return (
                 <div key = {index} className="card">
                     <Link to= {`/markets/${index}`}></Link>
+                    <div class="marketP">
                     <p>Time: {market.time}</p>
                     <p>Asset ID: {market.asset_id_quote}</p>
                     <p>Rate: {market.rate}</p>
+                    </div>
                     <button>Trade</button>
                     </div>
                 )

@@ -1,6 +1,6 @@
 .App {
     min-height: 100vh;
-    background: #111111;
+    background: #161616;
 }
 .App-header {
     display: flex;
@@ -36,7 +36,6 @@ flex: 1;
     text-decoration: none;
 }
 .main {
-
     text-align: center;
 }
 .container {
@@ -45,14 +44,34 @@ flex: 1;
 }
 .login {
     padding: 10px;
+    text-align: center;
+    color: azure;
 }
 .carousel {
     position: center;
     min-height: fit-content;
 }
-.footer {
-    
-}
-.login {
+
+.registerinput {
     text-align: center;
-  }
+    padding: 30px;
+    height: 80px;
+}
+input {
+    height: 40px;
+    width: 350px;
+}
+.labels {
+    text-shadow: 1px -1px 0 #ffffff;
+    position: relative;
+    right: 130px;
+    top: 20px;
+}
+.placeholders {
+    padding: 30px;
+    height: 80px;
+}
+#email {
+    position: relative;
+    right: 148px;
+}

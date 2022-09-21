@@ -16,11 +16,20 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <div class="login">
+      <label className="labels">Username</label>
+      <div className="placeholders">
+      <input id="username"  type="text" onChange={handleChange} value={formState.username}/>
+      </div>
+      <label className="labels">Password</label>
+      <div className="placeholders">
+      <input id="password" type="password" onChange={handleChange} value={formState.password}/>
+      </div>
       
-      <input id="username" placeholder="Username" type="text" onChange={handleChange} value={formState.username}/>
-      <label htmlFor="password"></label>
-      <input id="password" placeholder="Password" type="password" onChange={handleChange} value={formState.password}/>
-      <button type="submit">Login</button>
+      <div className="placeholders">
+      <button id="loginButton" type="submit">Login</button>
+      </div>
+      </div>
     </form>
   );
 }
