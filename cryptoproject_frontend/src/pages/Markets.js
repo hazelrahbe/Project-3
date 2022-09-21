@@ -6,25 +6,26 @@ import { json, Link } from "react-router-dom";
 const Markets = () => {
 const [allmarket, setMarket] = useState([]);
 
-useEffect(() => {fetch('https://rest-sandbox.coinapi.io/v1/exchangerate/USD?apikey=E886BD4A-B5AA-479D-8002-ED0EFEFF048B')
+useEffect(() => {fetch('https://cryptog-backend.herokuapp.com/coins/markets')
 .then((res) => res.json())
 .then((json) => {
-    console.log(json)
-    setMarket(json.rates)
+    // console.log(json)
+    setMarket(json)
 })
 .catch(console.error)}, []);
 console.log(allmarket)
     return (
         <section className="container">
-            {allmarket.map((market, index, rates) => {
+            {allmarket.map((market, index, data) => {
                 return (
                 <div key = {index} className="card">
-                    <Link to= {`/markets/${index}`}></Link>
-                    <div class="marketP">
-                    <p>Time: {market.time}</p>
-                    <p>Asset ID: {market.asset_id_quote}</p>
-                    <p>Rate: {market.rate}</p>
-                    </div>
+
+                    <Link to= {'/markets'}></Link>
+                    <p>ID: {market.id}</p>
+                    <p>Name: {market.name}</p>
+                    <p>Logo: {market.symbol}</p>
+                    <p>{market.usd}</p>
+
                     <button>Trade</button>
                     </div>
                 )
@@ -33,4 +34,3 @@ console.log(allmarket)
     )
 }
     export default Markets;
-
