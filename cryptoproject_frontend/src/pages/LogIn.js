@@ -16,10 +16,10 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="username">Username:</label>
-      <input id="username" type="text" onChange={handleChange} value={formState.username}/>
-      <label htmlFor="password">Password:</label>
-      <input id="password" type="password" onChange={handleChange} value={formState.password}/>
+      
+      <input id="username" placeholder="Username" type="text" onChange={handleChange} value={formState.username}/>
+      <label htmlFor="password"></label>
+      <input id="password" placeholder="Password" type="password" onChange={handleChange} value={formState.password}/>
       <button type="submit">Login</button>
     </form>
   );

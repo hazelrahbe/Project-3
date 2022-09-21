@@ -1,5 +1,6 @@
 .App {
     min-height: 100vh;
+    background: #111111;
 }
 .App-header {
     display: flex;
@@ -46,5 +47,12 @@ flex: 1;
     padding: 10px;
 }
 .carousel {
-    background-position: center;
+    position: center;
+    min-height: fit-content;
 }
+.footer {
+    
+}
+.login {
+    text-align: center;
+  }
