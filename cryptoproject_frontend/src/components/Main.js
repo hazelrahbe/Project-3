@@ -5,21 +5,21 @@ import Carousel from 'react-bootstrap/Carousel';
       <div className='carousel'>
       <Carousel slide={false}>
         <Carousel.Item>
-          <img src="https://i.imgur.com/6PCuCpJ.png" height="500" margin="auto" alt="First slide" class="first"/>
+          <img src="https://i.imgur.com/a8ZnF1m.jpeg" height="500" margin="auto" alt="First slide" class="first"/>
           <Carousel.Caption>
-            <h3>Crypto Wallet</h3>
+            <h3>Happy Pills</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src="https://i.imgur.com/JhYd0WJ.jpeg" margin="auto" alt="Second slide"/>
+          <img src="https://i.imgur.com/Sa2XjSx.jpeg" margin="auto" alt="Second slide"/>
           <Carousel.Caption>
-            <h3>Latest Market</h3>
+            <h3>Drinks with Friends</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src="https://i.imgur.com/ONDJKHh.jpeg" height="500" width="1250" alt="Third slide" class="third"/>
+          <img src="https://i.imgur.com/DOTy74u.jpeg" height="500" width="1250" alt="Third slide" class="third"/>
           <Carousel.Caption>
-            <h3>Popular CryptoCoins</h3>
+            <h3>Popular Cocktails</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
