@@ -11,7 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //import pages
 import Homepage from "./pages/Homepage";
-import Markets from "./pages/Markets";
+import Cocktails from './pages/Cocktails';
+import CocktailPage from './components/Cocktailpage';
 import Trade from "./pages/Trade";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Aboutus from "./pages/Aboutus";
@@ -32,7 +33,7 @@ function App() {
       </header>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
-        <Route path="/markets" element={<Markets  />} />
+        <Route path="/cocktails" element={<Cocktails />} />
         <Route path="/trade" element={<Trade />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/aboutus" element={<Aboutus />} />
