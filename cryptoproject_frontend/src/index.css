@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
 }
 
 code {
@@ -14,3 +13,27 @@ code {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+
+.carousel {
+  text-align: center;
+}
+h4 {
+  color: azure;
+}
+h1 {
+  color: azure;
+}
+p{
+  color: azure;
+}
+img {
+  height: 700px;
+  margin: auto;
+}
+.nav {
+  padding: 50px; 
+}
+
+.login {
+  text-align: center;
+}
