@@ -123,7 +123,7 @@ const loading = () => {
   );
 }
 export default Create;
-export {getCocktails};
+// export {getCocktails};
 
 
 

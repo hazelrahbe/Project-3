@@ -39,7 +39,7 @@ useEffect(() => {
             </form>
             {alldrinks.map((drink) => {
                 return (
-                <div key = {drink._id} className="c">
+                <div key = {drink._id} className="card">
 
                     <Link to= {`/cocktails/${drink.idDrink}`}>
                     <p>ID: {drink._id}</p>
