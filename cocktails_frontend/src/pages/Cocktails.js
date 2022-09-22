@@ -28,7 +28,7 @@ useEffect(() => {
             setDrink(json)
     })
 .catch(console.error)}, []);
-console.log(mySearch)
+// console.log(mySearch)
     return (
         <section className="container">
             <form onSubmit={handleSubmit}> 
@@ -39,10 +39,12 @@ console.log(mySearch)
                 return (
                 <div key = {drink._id} className="card">
 
-                    <Link to= {`/cocktails/`}></Link>
+                    <Link to= {`/cocktails/${drink.idDrink}`}>
                     <p>ID: {drink._id}</p>
                     <p>Cocktail Name: {drink.strDrink}</p>
                     <img src={drink.strDrinkThumb}/>
+                    <p>Thier id: {drink.idDrink}</p>
+                    </Link>
                     </div>
                 )
             })}
