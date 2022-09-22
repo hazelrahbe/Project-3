@@ -16,7 +16,7 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="login">
+      <div class="login">
       <label className="labels">Username</label>
       <div className="placeholders">
       <input id="username"  type="text" onChange={handleChange} value={formState.username}/>
@@ -25,7 +25,6 @@ const Login = () => {
       <div className="placeholders">
       <input id="password" type="password" onChange={handleChange} value={formState.password}/>
       </div>
-      
       <div className="placeholders">
       <button id="loginButton" type="submit">Login</button>
       </div>
