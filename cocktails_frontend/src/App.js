@@ -21,7 +21,6 @@ import Register from './pages/Register';
 import Show from './pages/Show';
 
 
-
 function App() {
   // const URL = "http://localhost:3000/";
   return (
