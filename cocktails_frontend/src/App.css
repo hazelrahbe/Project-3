@@ -1,6 +1,6 @@
 .App {
     min-height: 100vh;
-    background: #161616;
+    background: #fbaa82;
 }
 .App-header {
     display: flex;
@@ -62,7 +62,7 @@ input {
     width: 350px;
 }
 .labels {
-    text-shadow: 1px -1px 0 #ffffff;
+    text-shadow: 1px -1px 0 #73a2ac;
     position: relative;
     right: 130px;
     top: 20px;
@@ -74,4 +74,26 @@ input {
 #email {
     position: relative;
     right: 148px;
+}
+.cocktails {
+    text-align: center;
+}
+.Cinput {
+    margin: 30px;
+    margin-bottom: 20px;
+}
+.Cbutton {
+    border-radius: 10%;
+}
+
+input::placeholder {
+        font-size: 20px;
+        font-weight: 500;
+}
+.card {
+    /* text-align: center;
+    margin: 60px; */
+}
+.Cimg {
+    border: 1px solid red;
 }
