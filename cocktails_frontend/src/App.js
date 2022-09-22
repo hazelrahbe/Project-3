@@ -18,7 +18,6 @@ import Aboutus from "./pages/Aboutus";
 import LoginLink from './components/LoginLink';
 import Login from './pages/LogIn';
 import Register from './pages/Register';
-import Search from './components/Search';
 import Show from './pages/Show';
 
 
@@ -30,7 +29,6 @@ function App() {
       <header className="App-header">
       <Header />
       <Nav />
-      <Search />
       <LoginLink />
       </header>
       <Routes>
