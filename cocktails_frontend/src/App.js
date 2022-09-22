@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import pages
 import Homepage from "./pages/Homepage";
 import Cocktails from './pages/Cocktails';
-import Trade from "./pages/Trade";
+import Create from "./pages/Create";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Aboutus from "./pages/Aboutus";
 import LoginLink from './components/LoginLink';
@@ -34,7 +34,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route path="/cocktails" element={<Cocktails />} />
-        <Route path="/trade" element={<Trade />} />
+        <Route path="/create" element={<Create />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/login" element={<Login />} />

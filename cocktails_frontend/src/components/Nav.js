@@ -10,7 +10,7 @@ const Nav = () => {
             <Link style={{textDecoration: 'none'}} to="/cocktails">
             <div class="whiteP"><p>Cocktails</p></div>
             </Link>
-            <Link style={{textDecoration: 'none'}} to="/trade">
+            <Link style={{textDecoration: 'none'}} to="/create">
             <div class="whiteP"><p>CreateYourOwn</p></div>
             </Link>
       </div>
