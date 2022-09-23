@@ -1,13 +1,12 @@
 import { useState } from "react"
 import { useEffect } from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Create = () => {
-const BASE_URL = process.env.REACT_APP_URL || "http://localhost:4000/drinks";
+const BASE_URL = "https://drinks--backend.herokuapp.com/drinks";
 
 
-const initialForm = { cocktailName: '', img: '', recipe: '' };
-const [formState, setFormState] = useState(initialForm);
+const initialForm = { strDrink: '', strDrinkThumb: '', idDrink:''};
 const getCocktails = async () => {
   try {
     const response = await fetch(BASE_URL);
@@ -20,6 +19,7 @@ const getCocktails = async () => {
   
 };
 
+const navigate = useNavigate();
 const [cocktail, setCocktail] = useState([]);
 const [newForm, setNewForm] = useState(initialForm)
 
@@ -44,16 +44,15 @@ const handleSubmit = async (e) => {
     
     const response = await fetch(BASE_URL, options)
     const responseData = await response.json()
-  setCocktail(responseData)
-    setNewForm(initialForm)
+    navigate('/cocktails')
   } catch (err) {
     console.log(err)
   }
 }
 
 const handleChange = (e) => {
-  console.log("current input", e.target.name)
-  const data = { ...newForm, [e.target.name]: e.target.value }
+  console.log("current input", e.target.id)
+  const data = { ...newForm, [e.target.id]: e.target.value }
   console.log(data)
   setNewForm(data)
 }
@@ -89,17 +88,12 @@ const loading = () => {
       <div className="login">
         <label className="labels">cocktailName</label>
         <div className="placeholders">
-          <input id="cocktailname" type="text" onChange={handleChange} value={formState.cocktailname} />
+          <input id="strDrink" type="text" onChange={handleChange} value={newForm.strDrink} />
         </div>
         <label className="labels">img</label>
         <div className="placeholders">
-          <input id="img" type="text" onChange={handleChange} value={formState.img} />
+          <input id="strDrinkThumb" type="text" onChange={handleChange} value={newForm.strDrinkThumb} />
         </div>
-        <label className="labels">recipe</label>
-        <div className="placeholders">
-          <input id="recipe" type="text" onChange={handleChange} value={formState.recipe} />
-        </div>
-
         <div className="placeholders">
           <button id="createButton" type="submit">Create Cocktail</button>
         </div>
