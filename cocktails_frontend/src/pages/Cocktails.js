@@ -39,13 +39,16 @@ useEffect(() => {
             </form>
             {alldrinks.map((drink) => {
                 return (
-                <div key = {drink._id} className="card">
+                <div key = {drink._id} className="crd">
 
-                    <Link to= {`/cocktails/${drink.idDrink}`}>
-                    <p>ID: {drink._id}</p>
-                    <p>Cocktail Name: {drink.strDrink}</p>
+                    <Link style={{textDecoration: 'none'}} to= {`/cocktails/${drink.idDrink}`}>
+                    <p className="Cptag1"> {drink.strDrink}</p>
+                    <p className="Cptag2">ID: {drink._id}</p>
+                    <div class="CDimg">
                     <img src={drink.strDrinkThumb} className="Cimg"/>
-                    <p>Thier id: {drink.idDrink}</p>
+                    </div>
+                    {/* <p className="lastPtag">Their id: {drink.idDrink}</p> */}
+                    <hr></hr>
                     </Link>
                     </div>
                 )

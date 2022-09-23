@@ -1,14 +1,13 @@
 import { useState } from "react"
+import { useEffect } from 'react'
 import { Link } from "react-router-dom";
-
-
 
 const Create = () => {
 const BASE_URL = process.env.REACT_APP_URL || "http://localhost:4000/drinks";
 
 
 const initialForm = { cocktailName: '', img: '', recipe: '' };
-
+const [formState, setFormState] = useState(initialForm);
 const getCocktails = async () => {
   try {
     const response = await fetch(BASE_URL);
@@ -27,7 +26,6 @@ const [newForm, setNewForm] = useState(initialForm)
 useEffect(() => {
     getCocktails();
 }, [])
-
 
 const handleSubmit = async (e) => {
   e.preventDefault()
@@ -53,20 +51,18 @@ const handleSubmit = async (e) => {
   }
 }
 
-
 const handleChange = (e) => {
   console.log("current input", e.target.name)
   const data = { ...newForm, [e.target.name]: e.target.value }
+  console.log(data)
   setNewForm(data)
 }
-
-
 
 const loaded = () => {
 return cocktail?.map((drink) => {
    return (
        <div key={drink._id} className='drink-card'>
-           <Link to={`/people/${drink._id}`}>
+           <Link to={`/create/${drink._id}`}>
            <h1>{drink.name}</h1>
            <img src={drink.image} alt={drink.title} />
            <h3>{drink.title}</h3>
@@ -76,28 +72,17 @@ return cocktail?.map((drink) => {
   });
 };
 
-
-
-
 const loading = () => {
   return (
 <section className="people-list">
    <h1>
        Loading...
        <span>
-          
-          <img
-               role="presentation"
-               alt="spinner logo"
-               className="spinner"
-               src="https://freesvg.org/img/1544764567.png"
-           />{" "}
+          <img role="presentation" alt="spinner logo" className="spinner" src="https://freesvg.org/img/1544764567.png"/>
        </span>
    </h1>
 </section>
 )};
-
-
 
   return (
     <form onSubmit={handleSubmit}>
@@ -108,11 +93,11 @@ const loading = () => {
         </div>
         <label className="labels">img</label>
         <div className="placeholders">
-          <input id="img" type="img" onChange={handleChange} value={formState.img} />
+          <input id="img" type="text" onChange={handleChange} value={formState.img} />
         </div>
         <label className="labels">recipe</label>
         <div className="placeholders">
-          <input id="recipe" type="recipe" onChange={handleChange} value={formState.recipe} />
+          <input id="recipe" type="text" onChange={handleChange} value={formState.recipe} />
         </div>
 
         <div className="placeholders">
@@ -122,22 +107,6 @@ const loading = () => {
     </form>
   );
 }
+
 export default Create;
 // export {getCocktails};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

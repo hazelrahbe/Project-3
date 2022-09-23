@@ -15,11 +15,10 @@ import Cocktails from './pages/Cocktails';
 import Create from "./pages/Create";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Aboutus from "./pages/Aboutus";
-import LoginLink from './components/LoginLink';
+// import LoginLink from './components/LoginLink';
 import Login from './pages/LogIn';
 import Register from './pages/Register';
 import Show from './pages/Show';
-
 
 
 function App() {
@@ -29,7 +28,7 @@ function App() {
       <header className="App-header">
       <Header />
       <Nav />
-      <LoginLink />
+      {/* <LoginLink /> */}
       </header>
       <Routes>
         <Route exact path="/" element={<Homepage />} />

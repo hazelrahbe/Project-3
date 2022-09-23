@@ -27,10 +27,9 @@ const Show = () => {
 
   return (
     <div className="person">
-            <h1>Show Page</h1>
-            <h2>{alldrinks.strDrink}</h2>
-            <img src={alldrinks.strDrinkThumb} />
-            <p>{alldrinks.strInstructions}</p>
+      <h2 class="Sh2">{alldrinks.strDrink}</h2>
+      <img class="Simg" src={alldrinks.strDrinkThumb} />
+      <p className="Sp"> {alldrinks.strInstructions}</p>
     </div>
 
   )
