@@ -21,8 +21,6 @@ flex: 1;
     gap: 30px;
     position: relative;
     bottom: 0;
-    /* display: flex;
-    margin-left: 45%; */
     font-weight: bold;
     font-size: 25px;
 }
@@ -91,7 +89,7 @@ input::placeholder {
         font-weight: 500;
 }
 .Cimg {
-    border: 2px solid rgb(233, 195, 124);
+    border: 5px solid rgb(233, 195, 124);
     margin-top: 10px;
 }
 .crd {
@@ -99,6 +97,7 @@ input::placeholder {
 }
 .Cptag1 {
     margin: 20px;
+    margin-bottom: -30px;
     color: rgb(226, 164, 71);
     font-size: 30px;
     text-decoration: none;
@@ -106,6 +105,7 @@ input::placeholder {
 }
 .Cptag2 {
     margin: 30px;
+    margin-bottom: 10px;
     color: rgb(226, 164, 71);
     text-decoration: none;
 }
